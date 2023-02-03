@@ -31,7 +31,7 @@ In this model, our data is clustered into different classes. After this process 
   The report shown above tells us the following:
 
   - Precision: the score for high risk is 0.01 and 1.00 for low risk.
-  - Recall/Sensitivity: the score for high risk is 0.71 and 0.58 for low risk.
+  - Recall/Sensitivity: the score for high risk is 0.71 and 0.58 for low risk. 
 
 ### SMOTE Oversampling:
 This model, similarly to Random Oversampling, the size of the minority is increased by interpolating them. A number of its closest neighbor is chosen, and based on those values, the new values are created.This model returned the following results:

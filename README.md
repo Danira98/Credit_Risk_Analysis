@@ -16,7 +16,7 @@ In order to predict which customers are a credit risk, we will use Python and it
 Our results will include a classification report as well as an accuracy score that will help us identify which algorithm performs best with the given dataset.
 
 ## Results
-### Oversampling Approach
+#### Oversampling Approach
 - Random Oversampling:
 In this model, our data is clustered into different classes. After this process is done, the instances in our minority class are randomly selected and added to the training data set until the minority and majority classes are balanced. This model returned the following results:
   - Accuracy score: 0.6463970560994359
@@ -34,42 +34,45 @@ This model, similarly to Random Oversampling, the size of the minority is increa
   - Confusion Matrix:
 
 ![SMOTE_confusing_matrix](https://user-images.githubusercontent.com/111034667/216507072-2d0618c5-1340-4927-90b9-844ad941b0f0.png)
+
   - Imbalanced Classification Report:
 
 ![SMOTE_report](https://user-images.githubusercontent.com/111034667/216507224-6044bf45-1e99-4471-87f0-267bef9eec57.png)
 
-### Undersampling
+#### Undersampling
 - Cluster Centroids:
 In this model, our algorithm clusters the majority class, then generates centroids that are representative of the clusters. Then, the majority class is undersampled down to the size of the minority class.This model returned the following results:
-  -Accuracy score:0.5447339051023905
-  -Confusion Matrix:
+  - Accuracy score:0.5447339051023905
+  - Confusion Matrix:
   
   ![centroid_confusion_matrix](https://user-images.githubusercontent.com/111034667/216508259-1af12004-62dc-41d8-a366-cbeaee698ae1.png)
-  -Imbalanced Classification Report:
+  
+  - Imbalanced Classification Report:
   
 ![centroid_report](https://user-images.githubusercontent.com/111034667/216508270-cebe28f4-87fb-40b6-814d-d383894354a6.png)
 
-### Combination of Undersampling and Oversampling
+#### Combination of Undersampling and Oversampling
 - SMOTEENN:
 In this model , our algorithm first oversamples the minority class with the approach of SMOTE and later on cleans the resulting data with an undersampling strategy. In the case where the two nearest neighbors points of a data point belong to two different classes, the data point is dropped.The results for this model are the following:
-  -Accuracy score:0.5447339051023905
-  -Confusion Matrix:
+  - Accuracy score:0.5447339051023905
+  - Confusion Matrix:
   
   ![SMOTEENN_confusion_matrix](https://user-images.githubusercontent.com/111034667/216508741-fbc06ffa-629d-4dce-911f-552c2734ecd4.png)
-  -Imbalanced Classification Report:
+  
+  - Imbalanced Classification Report:
   
   ![SMOTEENN_report](https://user-images.githubusercontent.com/111034667/216508760-5d5cb39c-3bad-4047-b6eb-c3e8344ba37b.png)
 
-### Ensamble Learners
+#### Ensamble Learners
 - Balanced Random Forest Classifier:
 In this model,our data is classified similarly to the Random Forest model but it randomly undersamples each bostrap sample to balance it out. The following are the results of our model
 
-  -Accuracy score:0.7885466545953005
-  -Confusion Matrix:
+  - Accuracy score: 0.7885466545953005
+  - Confusion Matrix:
   
   ![balanced_confusion_matrix](https://user-images.githubusercontent.com/111034667/216509325-34ed379e-f105-4e5f-9593-a6691aa6467a.png)
 
-  -Imbalanced Classification Report:
+  - Imbalanced Classification Report:
 
 ![balanced_report](https://user-images.githubusercontent.com/111034667/216509350-bc2283a1-9b17-4a11-a67c-fea7dc029ae8.png)
 
@@ -77,11 +80,12 @@ In this model,our data is classified similarly to the Random Forest model but it
 - Easy Ensamble AdaBoost Classifier:
 In this model, our data is classified with the AdaBoost learners which train on different balanced bootstraps samples by randomly under-sampling the samples. The results of this model are the following:
 
-  -Accuracy score:0.9316600714093861
-  -Confusion Matrix:
+  - Accuracy score:0.9316600714093861
+  - Confusion Matrix:
   
   ![Ada_confusion_matrix](https://user-images.githubusercontent.com/111034667/216509672-74784b7e-63ba-4c3d-a0a5-0f78e51f58a2.png)
-  -Imbalanced Classification Report:
+  
+  - Imbalanced Classification Report:
   
   ![Ada_report](https://user-images.githubusercontent.com/111034667/216509684-aadbe999-016c-46ff-bf06-c11cad1d1411.png)
 

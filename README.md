@@ -30,7 +30,7 @@ In this model, our data is clustered into different classes. After this process 
 
   The report shown above tells us the following:
 
-  - Precision: the score for high risk is 0.01 and 1.00 for low risk.
+  - Precision: the score for high risk is 0.01 and 100 for low risk.
   - Recall/Sensitivity: the score for high risk is 0.71 and 0.58 for low risk. 
 
 ### SMOTE Oversampling:
@@ -118,6 +118,7 @@ In this model, our data is classified with the AdaBoost learners which train on 
   - Precision: the score for high risk is 0.09 and 1.00 for low risk. 
   - Recall/Sensitivity: the score for high risk is 0.92 and 0.94 for low risk.
   
+### Note: All scores represent percentages.
 ## Summary
 
 Overall, the model that performed the best with the dataset provided was the Easy ensamble AdaBoost classifier. The accuracy, precision and recall score were the highest across all variables. In this case, it would be ideal to use this model since the recall score is the highest for the high risk and low risk categories, meaning that our model will corectly classifiy the customers in their respective category, minimizing the amount of customers that would be identified as a high risk when actually being low risk and vise versa.This can also be seen in the confusion matrix,in which it shows that there were 93 customers that were correctly categorized as low risk and 16,121 correctly categorized as high risk. This model is ideal for the bank since it will correctly categorize most customers.

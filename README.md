@@ -29,6 +29,7 @@ In this model, our data is clustered into different classes. After this process 
 ![random_over_report](https://user-images.githubusercontent.com/111034667/216506438-60780961-e707-493e-acf1-6f420cc367c1.png)
 
   The report shown above tells us the following:
+  
     - Precision: the score for high risk is 0.01 and 1.00 for low risk.
     - Recall/Sensitivity: the score for high risk is 0.71 and 0.58 for low risk.
 
@@ -44,6 +45,7 @@ This model, similarly to Random Oversampling, the size of the minority is increa
 ![SMOTE_report](https://user-images.githubusercontent.com/111034667/216507224-6044bf45-1e99-4471-87f0-267bef9eec57.png)
 
   The report shown above tells us the following:
+  
     - Precision: the score for high risk is 0.01 and 1.00 for low risk.
     - Recall/Sensitivity: the score for high risk is 0.63 and 0.68 for low risk.
     
@@ -59,6 +61,7 @@ In this model, our algorithm clusters the majority class, then generates centroi
   
 ![centroid_report](https://user-images.githubusercontent.com/111034667/216508270-cebe28f4-87fb-40b6-814d-d383894354a6.png)
   The report shown above tells us the following:
+  
     - Precision: the score for high risk is 0.01 and 1.00 for low risk.
     - Recall/Sensitivity: the score for high risk is 0.69 and 0.40 for low risk.
     
@@ -75,6 +78,7 @@ In this model , our algorithm first oversamples the minority class with the appr
   ![SMOTEENN_report](https://user-images.githubusercontent.com/111034667/216508760-5d5cb39c-3bad-4047-b6eb-c3e8344ba37b.png)
   
   The report shown above tells us the following:
+  
     - Precision: the score for high risk is 0.01 and 1.00 for low risk.
     - Recall/Sensitivity: the score for high risk is 0.73 and 0.60 for low risk. 
     
@@ -92,6 +96,7 @@ In this model,our data is classified similarly to the Random Forest model but it
 ![balanced_report](https://user-images.githubusercontent.com/111034667/216509350-bc2283a1-9b17-4a11-a67c-fea7dc029ae8.png)
 
   The report shown above tells us the following:
+  
     - Precision: the score for high risk is 0.03 and 1.00 for low risk.
     - Recall/Sensitivity: the score for high risk is 0.70 and 0.87 for low risk.
 
@@ -108,6 +113,7 @@ In this model, our data is classified with the AdaBoost learners which train on 
   ![Ada_report](https://user-images.githubusercontent.com/111034667/216509684-aadbe999-016c-46ff-bf06-c11cad1d1411.png)
   
   The report shown above tells us the following:
+  
     - Precision: the score for high risk is 0.09 and 1.00 for low risk.
     - Recall/Sensitivity: the score for high risk is 0.92 and 0.94 for low risk.
   

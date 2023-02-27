@@ -1,7 +1,7 @@
 # Credit Risk Analysis: ***Working with Supervised Machine Learning***
 ## Overview of Project
 ### Overview:
-In this project, we will program six differnt supervised machine learning algorithms and compare them to eachother to identify which model would be ideal for our purpose. We are creating these algorithms to help a bank predict credit risk. Credit risk overall is an unbalanced classification problem due to the tendency of riskly loans outnumbering good loans, therefore, it creates a need to create a classificatio model that can accurately preditct risky loans. We will use a few different approaches to balance out our classification and aim for the best performance of at least one of the models.
+In this project, we will program six different supervised machine learning algorithms and compare them to eachother to identify which model would be ideal for our purpose. We are creating these algorithms to help a bank predict credit risk. Credit risk overall is an unbalanced classification problem due to the tendency of riskly loans outnumbering good loans, therefore, it creates a need to create a classificatio model that can accurately preditct risky loans. We will use a few different approaches to balance out our classification and aim for the best performance of at least one of the models.
 
 ### Purpose:
 In order to predict which customers are a credit risk, we will use Python and its library of Scikit-learn to carry on our analysis. We will assest how well a model classifies and predicts data. Additionally, we will compare the following machine learning algorithms to determine which one would be the ideal model to use for our purpose:
